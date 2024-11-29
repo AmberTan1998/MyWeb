@@ -1,0 +1,65 @@
+/* 设置页面的整体布局 */
+.container {
+  display: flex;         /* 使用 Flexbox 布局 */
+  flex-direction: row;   /* 将内容横向排列 */
+  align-items: left;
+  justify-content: space-between;
+  height: 1012px;         /* 占满整个视窗高度 */
+  width: 100vw;          /* 占满整个视窗宽度 */
+}
+
+/* 左侧文本和按钮容器 */
+.text-container {
+  display: left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;    
+  height: 1012px;          /* 左侧占 40% */
+  text-align: left;
+  background-color: #CFD7EC;
+}
+.spline-background {
+  position: relative;
+  width: 57vw;
+  height: 100vh; 
+  margin: 30px 0;
+  z-index: 1;
+  transform: scale(1.5); /* 放大 1.2 倍 */
+  background-color: #CFD7EC;
+}
+/* 标题样式 */
+.title {
+  font-size: 80px;
+  font-family: "Inter-Black", Helvetica;
+  font-weight: bold;
+  color: #6f79a8;
+  margin-bottom: 50px;
+  left: 900px;
+  top: 90px;
+}
+
+/* 按钮容器 */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  top: 10px;
+}
+
+/* 设置按钮的样式 */
+.button {
+  display: block;
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: rgba(102, 140, 255, 0.6)
+}
+.button:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
