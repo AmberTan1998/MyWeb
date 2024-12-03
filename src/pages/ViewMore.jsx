@@ -25,6 +25,7 @@ function ViewMore() {
                             <p>
                                 University of Limerick <br />
                                 Interaction and Experience Design
+                                <link> www.ul.ie</link>
                             </p>
                         </div>
                     </div>
