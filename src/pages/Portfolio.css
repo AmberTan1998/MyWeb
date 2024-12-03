@@ -1,0 +1,34 @@
+.grid-portcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* 根据需求调整图片之间的间距 */
+    align-items: flex-start; /* 确保图片和文字从顶部对齐 */
+    flex-wrap: nowrap; /* 禁止换行 */
+    margin-left: -18px;
+    gap: -200px;
+}
+
+.grid-portphoto {
+    display: flex;
+    flex-direction: column; /* 将每张图片和文字描述纵向排列 */
+    align-items: center; /* 图片和文字在列中居中 */
+    margin: 0 -40px;
+}
+
+.grid-portphoto img {
+    margin-top: 60px;
+    width: 200px; /* 图片宽度 */
+    height: 200px; /* 图片高度 */
+    object-fit: cover; /* 保持图片比例缩放 */
+    margin-bottom: -10px; /* 图片与文字之间的距离 */
+    border-radius: 10px; /* 图片圆角效果 */
+}
+
+.caption {
+    margin-top: 5px; /* 调整文字与图片的间距 */
+    text-align: center; /* 文字居中对齐 */
+    font-size: 14px; /* 字体大小 */
+    color: #828282; /* 字体颜色 */
+    line-height: 1.5; /* 调整文字行间距，便于多行文本 */
+    white-space: nowrap;
+}

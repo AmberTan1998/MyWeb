@@ -1,69 +1,91 @@
 
-.About h1{
-    top: 60px;
-    left: 800px;
-    color: #6f79a8;
+/* 弹窗样式 */
+.box {
+    background-color: #000000b2;
+    border-radius: 20px;
+    backdrop-filter: blur(50px) brightness(100%);
+    border: 5px solid #6dc933;
+    margin-top: 80px;
+    margin-left: 50px;
+    height: 480px;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
+    width: 800px;
+    animation: fadeIn 2s 0.5 forwards;
 }
 
-.About p{
-    top: 140px;
-    left: 500px;
+.close{
     position: absolute;
-    z-index: 2;
-    line-height:1.6;
-    font-size: x-large;
+    width: 20px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    animation: fadeOut 2s 0.5 forwards;
 }
 
-.Education  h1{
-    top: 260px;
+.box h1{
+    text-align: center;
     font-size: 30px;
-    left: 845px;
-    color: #8992b8;
-    position: absolute;
-    z-index: 2;
+    padding-top: 2px;
+    margin-bottom: -20px;
+}
+.box h3{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 25px;
+    margin-bottom: -40px;
+}
+.box h4{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 3px;
+    margin-top: 70px;
+}
+.box p{
+    margin: 0 100px;
+    text-align: justify;
+    padding-top: 48px;
+    margin-bottom: -20px;
+    
 }
 
-.p1{
-    top: 300px;
-    left: 500px;
+
+.more{
+    text-align: right;
+    margin: 20px;
     position: absolute;
-    z-index: 2;
-    line-height:1.6;
-    font-size: x-large;
+    bottom: -5px; /* 距离底部的距离 */
+    right: 20px; /* 距离右侧的距离 */
+    text-decoration: underline;
+}
+.arrow{
+    position: absolute;
+    bottom: 3px; /* 距离底部的距离 */
+    right: -10px; /* 距离右侧的距离 */
+    width: 15px;
+    height: 10px;
+   
 }
 
-.p2{
-    top: 340px;
-    left: 500px;
-    position: absolute;
-    z-index: 2;
-    line-height:1.6;
-    font-size: x-large;
+@keyframes fadeIn {
+    from {
+        transform: translateY(-20px); /* 从上方稍微移入 */
+        opacity: 0; /* 初始透明 */
+    }
+    to {
+        transform: translateY(0); /* 定位到正常位置 */
+        opacity: 1; /* 完全不透明 */
+    }
 }
 
-.Personal  h1{
-    top: 400px;
-    left: 850px;
-    position: absolute;
-    z-index: 2;
-}
-
-.p3{
-    top: 480px;
-    left: 500px;
-    position: absolute;
-    z-index: 2;
-    line-height:1.6;
-    font-size: x-large;
-}
-
-.p4{
-    top: 520px;
-    left: 500px;
-    position: absolute;
-    z-index: 2;
-    line-height:1.6;
-    font-size: x-large;
+/* 定义弹窗退出动画 */
+@keyframes fadeOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
 }

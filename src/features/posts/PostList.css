@@ -1,0 +1,44 @@
+
+
+
+.posts-container{
+    text-align: center;
+    font-size: 20px;
+}
+
+.posts-container h2{
+    font-size: 25px;
+}
+
+.posts-container p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.posts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+    gap: 10px;
+}
+
+
+article{
+    border: 2px solid white;
+    border-radius:10px;
+}
+
+article h3{
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.posts-container h2{
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.reactionButton{
+    all: unset;
+    margin: 15px ;
+}

@@ -1,0 +1,28 @@
+.photo-container{
+    display: grid;
+    grid-template-columns: repeat(4 fr);
+    gap: 20px;
+
+}
+
+.portfolio-photo{
+    display: flex;
+    gap: 3rem;
+    justify-content: center; /* 使图片居中对齐 */
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.portfolio-photo img{
+    width: 150px; /* 自动适应宽度 */
+    height: 450px; /* 设定一个合适的高度 */
+    object-fit: cover; /* 保持比例裁剪 */
+    border-radius: 10px; /* 圆角样式可选 */
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    
+}
+.portfolio-photo img:hover {
+    transform: scale(1.05); /* 轻微放大 */
+    filter: drop-shadow(0 0 3em #ffffffaa);
+}

@@ -1,0 +1,42 @@
+.send-post{
+    width: 100%;
+    height: auto;
+}
+
+.send-post h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.post-form form{
+    text-align: center;
+    align-items: center;
+}
+
+.post-form label{
+    padding-left: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.post-form input,
+.post-form select,
+.post-form textarea{
+    margin-left: 1rem;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.post-form textarea{
+    resize: none;
+    height: 15px;
+}
+
+.post-form button{
+    background-color: #e8901d;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 350px 0px 350px;
+    padding: 5px;
+    font-size:15px;
+}

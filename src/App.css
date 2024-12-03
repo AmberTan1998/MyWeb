@@ -1,65 +1,84 @@
+@font-face {
+  font-family: 'ArialBlack'; /* 给字体取一个名称 */
+  src: url('./assets/Arial Black.ttf') format('truetype'); /* 使用相对路径加载字体 */
+  font-weight: normal;
+  font-style: normal;
+}
 /* 设置页面的整体布局 */
 .container {
-  display: flex;         /* 使用 Flexbox 布局 */
-  flex-direction: row;   /* 将内容横向排列 */
-  align-items: left;
-  justify-content: space-between;
-  height: 1012px;         /* 占满整个视窗高度 */
-  width: 100vw;          /* 占满整个视窗宽度 */
+  display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  z-index: 1;
 }
 
 /* 左侧文本和按钮容器 */
 .text-container {
-  display: left;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 600px;    
-  height: 1012px;          /* 左侧占 40% */
-  text-align: left;
-  background-color: #CFD7EC;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px); 
+    display: flex;
+    flex-direction: column;/*layout diraction*/
+    align-items: center;
+    justify-content: center;/*content layout*/
+    z-index: 1; /* 确保内容在 3D 背景上层 */
+    padding: 10px;
+    margin-top: -60px;
 }
+
 .spline-background {
+  width: 100%; /* 右侧区域占 60% */
   position: relative;
-  width: 57vw;
-  height: 100vh; 
-  margin: 30px 0;
-  z-index: 1;
-  transform: scale(1.5); /* 放大 1.2 倍 */
-  background-color: #CFD7EC;
+  overflow: hidden;
+  transform: scale(2);
+  align-items: center;
 }
+
+/* 3D 资源的样式，确保它撑满右侧 */
+.spline {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
 /* 标题样式 */
 .title {
-  font-size: 80px;
-  font-family: "Inter-Black", Helvetica;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 80px;
+  font-family: 'ArialBlack', sans-serif;
   font-weight: bold;
-  color: #6f79a8;
-  margin-bottom: 50px;
-  left: 900px;
-  top: 90px;
+  color:#6dc933;
+  
 }
 
 /* 按钮容器 */
 .button-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  top: 10px;
 }
 
 /* 设置按钮的样式 */
 .button {
-  display: block;
-  width: 200px;
-  margin: 15px;
-  padding: 15px;
-  font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  border-radius: 8px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  width: 350px;
+  height: 60px;
+  margin: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  border-color: #6dc933;
+  border-radius: 5px;
   cursor: pointer;
-  color: rgba(102, 140, 255, 0.6)
+  color: #6dc933;
+  border: 2px solid;
+
 }
 .button:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #5ad03faa);
 }

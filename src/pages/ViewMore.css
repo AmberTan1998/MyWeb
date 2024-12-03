@@ -1,0 +1,123 @@
+.view-container{
+    background:#000000;
+    width:72%;
+}
+
+.view-container h1{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: justify;
+    margin: 10px 80px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    left: 50px;
+    border-bottom: 1px solid #6dc933;
+}
+
+.arrow_top{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    transform: rotate(180deg);
+    top: 61px;
+    left: 80px;
+    cursor: pointer;
+}
+
+.education h2{
+    margin-top: 2px;
+    margin-left: 130px;
+    display: flex;
+    font-size: x-large;
+    border-bottom: 1px solid #6dc933;
+
+}
+
+.education a{
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: 50px;
+    align-items: baseline;
+    background-color: aliceblue;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+.education-text{
+    padding: 1rem 0;
+}
+
+.education-text span{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1px;
+}
+
+.current {
+    font-size: larger;
+    font-weight: 800;
+}
+
+
+.wrapper1{
+    display: flex;
+    align-items: center; /* 垂直居中对齐内容 */
+    padding-left: 130px;
+}
+
+.wrapper2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+}
+
+.text-wrapper1{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    
+}
+
+.text-wrapper2{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    white-space: nowrap;
+
+    
+}
+
+.text-wrapper3{
+    display: flex;
+    margin-top: -20px;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+.text-wrapper4{
+    display: flex;
+    margin-top: -30px;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+
+.wrapper1 img {
+    width: 10rem; /* 设定统一宽度 */
+    height: auto; /* 保持图片比例 */
+    margin-right: 20px; /* 给图片与文本之间添加间距 */
+    object-fit: cover;
+    align-self: center; /* 垂直居中 */
+}
+
+.wrapper2 img {
+    width: 100px; /* 设定统一宽度 */
+    margin-right: 20px; /* 给图片与文本之间添加间距 */
+    object-fit: cover;
+    align-self: center; /* 垂直居中 */
+}
+
+
+

@@ -1,0 +1,35 @@
+
+.contactme{
+    object-position: relative;
+    width: 60%;
+    margin: 1.5rem 12rem;
+    object-fit: cover;
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+}
+
+.contact h2{
+    text-align: center;
+    margin: 10px;
+}
+
+
+.contact form{
+    text-align: left;
+    align-items: center;
+}
+
+.contact label{
+    padding-left: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.contact input{
+    margin-left: 1rem;
+    background-color: aquamarine;
+    border-radius: 10px;
+}

@@ -1,0 +1,148 @@
+.view-container{
+    background: linear-gradient(90deg, #000000 100%, #baf2ac 100%);
+    width:72%;
+}
+
+.view-container h1{
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: justify;
+    margin: 10px 80px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    left: 50px;
+    border-bottom: 1px solid #6dc933;
+}
+
+.arrow_top{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    transform: rotate(180deg);
+    top: 61px;
+    left: 80px;
+    cursor: pointer;
+}
+
+.photos h2{
+    margin-left: 130px;
+    display: flex;
+    font-size: x-large;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.video h2{
+    margin-left: 130px;
+    display: flex;
+    font-size: x-large;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    gap: 5px;
+
+}
+
+.grid-photos{
+    display: flex;
+    margin-top: 10px;
+    margin-left:130px;
+    gap:40px;
+}
+
+.grid-photos img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 35px;
+    border-radius: 2rem;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.video video {
+    margin: -10px 200px;
+}
+.grid-photos img:hover {
+    transform: scale(1.05); /* 轻微放大 */
+    filter: drop-shadow(0 0 3em #ffffffaa);
+}
+/* 缩略图 */
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 3em #ffffffaa);
+  }
+
+  .pic9button{
+    width: 140px;
+    height: 35px;
+    position: fixed;
+    top: 450px;
+    left: 540px;
+    cursor: pointer;
+
+  }
+  .bts img{
+    width: 140px;
+    height: 35px;
+    position: fixed;
+    top: 450px;
+    left: 540px;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    display: flex;
+    background-color: #02020201;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1300px;
+  }
+
+  .modal-image {
+    max-width: 100%;
+    height: 600px;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  
+  .description {
+    color: #ffffff;
+    max-width: 2000px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+  }
