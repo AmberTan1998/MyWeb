@@ -8,10 +8,11 @@ const About = () => {
     return (
         <div id="About">
             <div className="box">
-                {/* 将叉号设置为返回主页的链接 */}
-                <img src="right-arrow.png" alt="Back to Home" onClick={() => window.location.href = "/"} />
-
-                
+            {/*Set the close icon as a link to return to the homepage */}
+                <Link to="/">
+                    <img src={close} alt="close" className="close" />
+                </Link>
+                {/*Introduce myself briefly*/}
                 <div>
                     <p>
                     Hello, my name is Amber. This is my personal website, where I’ll be introducing myself in detail.</p>
@@ -24,7 +25,7 @@ const About = () => {
                     </p>
                     {/* 其他文本内容 */}
                 </div>
-
+                {/*Personal professional skill introduction*/}
                 <div>
                     <h3>Professional Knowledge</h3>
                     <h4>Interaction Design / User Experience Design / Graphic Design / 3D Modeling / Unity Development</h4>

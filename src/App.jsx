@@ -14,15 +14,16 @@ import Contact from './pages/contact';
 function App() {
     return (
         <main>
-            {/* outer container that wraps the main content of the page */}
             <div className="container">
-            {/* left section containing text and navigation buttons */}
+                {/* Outer container that wraps the main content of the page */}
+                {/* Left section containing text and navigation buttons */}
+            {/* 左侧文本和按钮 */}
             <div className="text-container">
-                 {/* website title */}
+                {/* Website title */}
                 <h1 className="title">Amber's Website</h1>
-                {/* using React Router's <Link> component to navigate between pages */}
+                {/* Container for navigation buttons */}
                 <div className="button-container">
-                    {/*Link button, click it, can go to About me/ Blog/ Portfolio/ Contact pages*/}
+                    {/* Button - navigates to the each page when clicked */}
                     <Link to="/About"><button className="button ">About Me</button></Link>
                     <Link to="/Blog"><button className="button">Blog</button></Link>
                     <Link to="/Portfolio"><button className="button">Portfolio</button></Link>
@@ -32,7 +33,8 @@ function App() {
             </div>
             <div>
             <Routes>
-                  {/* Define the routing paths and the components they render */}
+                 {/* Define the routing paths and the components they render */}
+                 {/* When the path is '/About /Blog /Portfolio /viewmore /contact', render the each component */}
                 <Route path='/About' element={<About/>} />
                 <Route path='/Blog' element={<Blog/>} />
                 <Route path='/Portfolio' element={<Portfolio />} />
@@ -43,9 +45,11 @@ function App() {
              
             </Routes>
             </div>
-                {/*outer container for background*/}
+                {/* 右侧的 3D 资源 */}
+                {/*The outer container assigned the CSS class spline-background */}
                 <div className="spline-background">
-                {/*this URL pointing to the Spline 3D scene file */}
+                    {/*URL pointing to the Spline 3D scene file*/}
+                    
                     <Spline className="spline" scene="https://prod.spline.design/dp8lgxE0S45N5Ud1/scene.splinecode" />
                 </div>
             

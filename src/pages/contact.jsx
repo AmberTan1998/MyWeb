@@ -30,12 +30,11 @@ function Contact() {
                                 placeholder='email'
                             />
 
-                            <label htmlFor="postphone">Phone:</label>
                             <input
                                 type="text"
-                                id="postEmail"
-                                name="postEmail"
-                                placeholder='email'
+                                id="postPhone"
+                                name="postPhone"
+                                placeholder='phone'
                             />
                         </form>
                     </div>
