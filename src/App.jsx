@@ -14,11 +14,15 @@ import Contact from './pages/contact';
 function App() {
     return (
         <main>
+            {/* outer container that wraps the main content of the page */}
             <div className="container">
-            {/* 左侧文本和按钮 */}
+            {/* left section containing text and navigation buttons */}
             <div className="text-container">
+                 {/* website title */}
                 <h1 className="title">Amber's Website</h1>
+                {/* using React Router's <Link> component to navigate between pages */}
                 <div className="button-container">
+                    {/*Link button, click it, can go to About me/ Blog/ Portfolio/ Contact pages*/}
                     <Link to="/About"><button className="button ">About Me</button></Link>
                     <Link to="/Blog"><button className="button">Blog</button></Link>
                     <Link to="/Portfolio"><button className="button">Portfolio</button></Link>
@@ -28,6 +32,7 @@ function App() {
             </div>
             <div>
             <Routes>
+                  {/* Define the routing paths and the components they render */}
                 <Route path='/About' element={<About/>} />
                 <Route path='/Blog' element={<Blog/>} />
                 <Route path='/Portfolio' element={<Portfolio />} />
@@ -38,9 +43,9 @@ function App() {
              
             </Routes>
             </div>
-                {/* 右侧的 3D 资源 */}
+                {/*outer container for background*/}
                 <div className="spline-background">
-                    
+                {/*this URL pointing to the Spline 3D scene file */}
                     <Spline className="spline" scene="https://prod.spline.design/dp8lgxE0S45N5Ud1/scene.splinecode" />
                 </div>
             

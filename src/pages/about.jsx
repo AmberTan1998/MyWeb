@@ -9,9 +9,8 @@ const About = () => {
         <div id="About">
             <div className="box">
                 {/* 将叉号设置为返回主页的链接 */}
-                <Link to="/">
-                    <img src={close} alt="close" className="close" />
-                </Link>
+                <img src="right-arrow.png" alt="Back to Home" onClick={() => window.location.href = "/"} />
+
                 
                 <div>
                     <p>
