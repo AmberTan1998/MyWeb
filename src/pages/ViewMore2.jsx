@@ -29,7 +29,10 @@ function ViewMore2() {
   return (
     <div className="container">
       <div className="view-container">
-        <img src={arrow} alt="arrow" className="arrow_top" />
+        {/* Navigation: Clicking on the arrow image will navigate the user back to the homepage */}
+      <Link to="/">
+          <img src={arrow} alt="arrow" className="arrow_top" />
+        </Link>
         <h1>Blog</h1>
         <div className="photos">
           <h2>Photos</h2>

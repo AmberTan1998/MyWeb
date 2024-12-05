@@ -11,21 +11,22 @@ import picnew from'../assets/po4.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
-  const navigate = useNavigate(); // 创建导航函数
+  const navigate = useNavigate(); // 创建导航函数 Create a navigation function
 
-  // 关闭按钮点击事件，返回主页
+  // 关闭按钮点击事件，返回主页 Close button click event handler, navigates to the homepage
   const handleClose = () => {
-    navigate('/'); // 导航到主页
+    navigate('/'); // 导航到主页 Navigate to the homepage
   };
 
   return (
     <div id="Portfolio">
       <div className="box">
+        {/* Close button with a click event to return to the homepage */}
         <img 
           src={close} 
           alt="close" 
           className="close" 
-          onClick={handleClose} // 为关闭按钮添加点击事件
+          onClick={handleClose} // 为关闭按钮添加点击事件 Add click event handler to the close button
         />
         <h1>Portfolio</h1>
         {/* 其他内容 */}
@@ -45,7 +46,7 @@ const Portfolio = () => {
 
 
         </div>
-
+        {/* Button to viewmore */}
         <div className="more">
           <Link to="/ViewMore3"><span>View More </span></Link>
           <img src={arrow} alt="arrow" className="arrow" />

@@ -5,12 +5,15 @@ import pic9 from '../assets/po1.jpg';
 import pic10 from '../assets/po2.jpg';
 import pic11 from '../assets/po3.jpg';
 import pic12 from'../assets/po4.jpg';
+import { Link } from 'react-router-dom';
 
 function ViewMore3() {
   return (
     <div className='container'>
         <div className='view-container'>
-            <img src={arrow} alt="arrow" className='arrow_top' />
+        <Link to="/">
+          <img src={arrow} alt="arrow" className="arrow_top" />
+        </Link>
             <h1>Portfolio</h1>
             <div className="photos">
                 <h2>Cases</h2>

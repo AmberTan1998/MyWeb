@@ -6,20 +6,30 @@ import bclogo from '../assets/bclogo.jpeg';
 import inkdeeps from '../assets/inkdeeps.png';
 import mao from '../assets/mao.png';
 import CV from '../assets/CV-Zhixuan Tan.pdf';
+import { Link } from 'react-router-dom';
 
 function ViewMore() {
   return (
     <div className='container'>
         <div className='view-container'>
-        <img src={arrow} alt="arrow" className='arrow_top' />
+     {/* Navigation: Clicking on the arrow image will navigate the user back to the homepage */}
+        <Link to="/">
+          <img src={arrow} alt="arrow" className="arrow_top" />
+        </Link>
+        {/* Section Header: "About Me" */}
             <h1>About me  </h1>
+            {/* Education Section */}
             <div className="education">
                 <h2>Education
+                    {/* Download Link: Allows users to download the CV as a PDF file */}
                     <a href={CV} download='CV.pdf'>Download CV</a>
                 </h2> 
+                {/* Current Education Wrapper */}
                 <div className="wrapper1">
+                    {/* University Logo */}
                     <div className='text-wrapper1'>
                         <img src={ullogo} alt="ullogo-img" />
+                        {/* Introduction words about school */}
                         <div className='education-text'>
                             <span>Currently</span>
                             <p>
@@ -28,9 +38,12 @@ function ViewMore() {
                             </p>
                         </div>
                     </div>
+                     {/* Past Education Wrapper */}
                     <div className='text-wrapper2'>
+                        {/* University Logo */}
                         <img src={bclogo} alt="bclogo-img" />
                         <div className='education-text'>
+                            {/* Introduction words about school */}
                             <span>Bachelor</span>
                             <p>
                                 Beijing City University<br /> 
@@ -41,6 +54,7 @@ function ViewMore() {
                     </div>
                 </div>
             </div>
+            {/* Work Section, basically same as education part */}
             <div className="education">
                 <h2>Work Experience</h2>
                 <div className="wrapper2">
