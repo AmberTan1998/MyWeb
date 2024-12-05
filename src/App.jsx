@@ -9,6 +9,7 @@ import ViewMore from './pages/ViewMore';
 import ViewMore2 from './pages/ViewMore2';
 import ViewMore3 from './pages/ViewMore3';
 import Contact from './pages/contact';
+import mylogo from './assets/mylogo.png';
 
 
 function App() {
@@ -18,9 +19,16 @@ function App() {
                 {/* Outer container that wraps the main content of the page */}
                 {/* Left section containing text and navigation buttons */}
             {/* 左侧文本和按钮 */}
+            {/* Navigation: Clicking on the arrow image will navigate the user back to the homepage */}
+            <div className='mylogo'>
+            <Link to="/">
+            <img src={mylogo} alt="mylogo" />
+            </Link>
+            </div>
             <div className="text-container">
                 {/* Website title */}
                 <h1 className="title">Amber's Website</h1>
+                
                 {/* Container for navigation buttons */}
                 <div className="button-container">
                     {/* Button - navigates to the each page when clicked */}
@@ -30,7 +38,7 @@ function App() {
                     <Link to="/contact"><button className="button">Contact</button></Link>
                 </div>
         
-            </div>
+                </div>
             <div>
             <Routes>
                  {/* Define the routing paths and the components they render */}
@@ -45,7 +53,7 @@ function App() {
              
             </Routes>
             </div>
-                {/* 右侧的 3D 资源 */}
+                {/*  3D 资源 */}
                 {/*The outer container assigned the CSS class spline-background */}
                 <div className="spline-background">
                     {/*URL pointing to the Spline 3D scene file*/}

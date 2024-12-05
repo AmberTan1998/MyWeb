@@ -13,7 +13,12 @@
     position: relative;
   z-index: 1;
 }
-
+.mylogo{
+  position: relative;
+  width:20px;
+  height: 10px;
+  z-index: 5;
+}
 /* 左侧文本和按钮容器 */
 .text-container {
     background: rgba(0, 0, 0, 0.6);
@@ -24,7 +29,7 @@
     justify-content: center;/*content layout*/
     z-index: 1; /* 确保内容在 3D 背景上层 */
     padding: 10px;
-    margin-top: -60px;
+    margin-top: -50px;
 }
 
 .spline-background {
